@@ -1,0 +1,23 @@
+CREATE TABLE  "SURVIVING_JEDI" 
+   ("REGISTRATION_NUMBER" NUMBER(16,0), 
+    "NAME" VARCHAR2(30), 
+    "SPECIES" VARCHAR2(25), 
+    "GENDER" VARCHAR2(1), 
+    "HEIGHT" FLOAT(3), 
+    "BORN" VARCHAR2(10), 
+    "ALLIANCE" VARCHAR2(30), 
+    "JEDI_TITLE" VARCHAR2(30), 
+    "JEDI_MASTER" VARCHAR2(30), 
+    "FIGHTING_STYLE" VARCHAR2(8), 
+    "LAST_KNOWN" VARCHAR2(255), 
+    "STATUS" VARCHAR2(20), 
+     CONSTRAINT "REGISTRATION_NUMBER_PK" PRIMARY KEY ("REGISTRATION_NUMBER")
+  USING INDEX  ENABLE
+   )
+
+
+INSERT INTO SURVIVING_JEDI(REGISTRATION_NUMBER, NAME, SPECIES, GENDER, HEIGHT, BORN, ALLIANCE, JEDI_TITLE, JEDI_MASTER, FIGHTING_STYLE, LAST_KNOWN, STATUS)
+VALUES('1', 'Ahsoka Tano', 'Togruta', 'F', '2', '36 BBY', 'Jedi Order, Rebellion', 'Padawan', 'Anakin Skywalker', 'TYPE IV', 'Was cited on Coruscant engaged in overthrowing the leadership. Made Requests that demonstrated individual was lookig for General Thrawn', 'Resurrected')
+
+INSERT INTO SURVIVING_JEDI(REGISTRATION_NUMBER, NAME, SPECIES, GENDER, HEIGHT, BORN, ALLIANCE, JEDI_TITLE, JEDI_MASTER, FIGHTING_STYLE, LAST_KNOWN, STATUS)
+VALUES('2', 'Yoda', 'Unknown', 'M', '1', '896 BBY', 'Jedi Order', 'Master', 'N Kata Del Gormo', 'TYPE IV', 'Hiding', 'Deceased')
